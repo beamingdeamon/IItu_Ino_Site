@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-      <div class="left_handler">
+      <div class="animate__animated animate__bounceInLeft left_handler">
         <div class="title">
           <div class="main_title">IITU<br></div>
           <div class="second_title">INNOVATION<br></div>
@@ -11,7 +11,7 @@
         </div>
         <a href="https://docs.google.com/forms/d/1LtJAvp_5nJUkYDsbvNpeQrVvk322_ioy1oQrW8rRwr0/viewform?edit_requested=true" class="register">Оставить заявку</a>
       </div>
-      <div class="right_handler">
+      <div class="animate__animated animate__bounceInRight right_handler">
         <div class="squares">
           <div class="radiant">
               <div class="opacity_block">
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import 'animate.css'
 export default {
   name:"Mainblock"
 }
@@ -110,5 +111,16 @@ export default {
         height: 4.5%
         color: grey
         line-height: 1.8
-
+  @media screen and ( max-width: 1024px )
+      .right_handler
+        display: none
+      .left_handler
+        width: 100% !important
+        .title
+          width: 80% !important
+          .second_title 
+            width: 80% !important
+        .register
+          width: 50% !important
+          line-height: 2.3 !important
 </style>

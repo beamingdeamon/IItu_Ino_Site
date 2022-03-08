@@ -5,5 +5,6 @@
         url('Gilroy-Bold.woff') format('woff'),
         url('Gilroy-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-weight: 400;
     font-style: normal;
   }
