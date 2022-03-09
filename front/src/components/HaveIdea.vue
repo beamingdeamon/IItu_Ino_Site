@@ -26,7 +26,7 @@
         <div class="number">3</div>
         <div class="opacity">
           <h1>Питчинг лучших проектов</h1>
-          <h2>Группа из Малаги, на юге Испании. Три сестры, которые играют традиционную «cante jondo».</h2>
+          <h2>Группа из Малаги, на юге Испании. Три сестры, которые играют <br>традиционную «cante jondo».</h2>
 
           </div>
       </div>
@@ -106,6 +106,7 @@ export default {
       .left_block
         height: 50vh
         width: 80%
+        margin-left: 3vw
         display: flex
         flex-direction: row
         justify-content: space-between
@@ -129,20 +130,20 @@ export default {
           backdrop-filter: blur(10px)
           border-radius: 20px
           h1
-            margin-top: 5vh
-            margin-left: 4vw
+            margin-top: 6vh
+            margin-left: 3vw
             font-weight: 600
             font-size: 2.3em
           h2
-            margin-top: 5vh
-            margin-left: 4vw
+            margin-top: 4vh
+            margin-left: 3vw
             line-height: 4.2vh
             font-weight: 400
-            font-size: 0.9em
+            font-size: 1.1em
             width: 80%
       .right_block
         height: 50vh
-        width: 82%
+        width: 76%
         display: flex
         flex-direction: row
         justify-content: space-between
@@ -169,14 +170,14 @@ export default {
           border-radius: 20px
           h1
             margin-top: 5vh
-            margin-left: 4vw
+            margin-left: 3vw
             font-weight: 600
             font-size: 2.3em
           h2
             margin-top: 5vh
-            margin-left: 4vw
+            margin-left: 3vw
             line-height: 4.2vh
             font-weight: 400
-            font-size: 0.9em
+            font-size: 1.1em
             width: 80%
 </style>

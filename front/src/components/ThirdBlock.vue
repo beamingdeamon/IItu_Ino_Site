@@ -39,7 +39,7 @@ export default {
     display: flex
     flex-direction: column
     .header
-      margin-left: 10vw
+      margin-left: 6vw
       margin-top: 15vh
       float: left
       font-size: 4em

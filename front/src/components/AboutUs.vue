@@ -42,22 +42,15 @@ export default {
     font-style: normal
   .wrapper
     width: 100vw
-    height: 110vh
+    height: 125vh
     display: flex
     flex-direction: column
     background-color: #12111A
     color: white
     font-family: 'Montserrat', sans-serif
-    .about_line
-      background: url("../assets/about_line.png")
-      background-size: 100%
-      background-position: center center
-      position: absolute
-      width: 60vw
-      height: 55.5vh
-      z-index: 100
-      left: 27vw
-      margin-top: 26.5vh
+    background: url("../assets/aboutus_block_bg.png")
+    background-size: 100%
+    background-position: center center
     .top_wrapper
       display: flex
       flex-direction: row
@@ -73,30 +66,34 @@ export default {
           margin-top: 10vh
           font-weight: 400
           font-size: 4em
+          margin-left: 7vw
           width: 60%
           padding:0
           margin-bottom: 1vh
         .h2
+          margin-left: 14.8vw
           font-weight: 400
           font-size: 1.2em
-          width: 60%
+          width: 80%
           letter-spacing: 1.3px
           .bold_aboutus
             font-weight: 600
         a
+          margin-top: 9vh
           color: black
           text-decoration: none
           font-family: 'Montserrat', sans-serif
           font-size: 1.1em
           display: flex
           align-items: center
+          justify-content: center
           background-color: #FFFFFF
           font-weight: 600
-          width: 30%
+          width: 35%
+          margin-right: 3vw
           height: 8%
           border-radius: 10px
           img
-            margin-left: 1vw
             margin-right: 0.5vw
       .right_handler
         width: 60%
@@ -117,21 +114,21 @@ export default {
         .first_image
           margin-top: 4vh
           z-index: 100
-          margin-left: 24vw
-          height: 70%
-          width: 29%
+          margin-left: 29vw
+          height: 68%
+          width: 34%
           background: url("../assets/about_image1.png")
           background-size: cover
           background-position: center center
           border-radius: 20px
         .second_image
-          width: 8%
-          height: 15%
+          width: 11%
+          height: 22%
           position: absolute
-          left: 77vw
-          top: 107vh
+          left: 85vw
+          top: 108vh
           margin-bottom: 3vh
-          border-radius: 50px
+          border-radius: 30px
           background: url("../assets/about_image1.jpg")
           background-size: cover
           background-position: center center
@@ -152,7 +149,7 @@ export default {
         position: absolute
         z-index: 0
       .opacity_block
-        height: 70%
+        height: 75%
         width: 87%
         margin-top: 2vw
         border-radius: 30px
@@ -160,12 +157,15 @@ export default {
         backdrop-filter: blur(10px)
         z-index: 100
         .opacity_block_title
-          margin-left: 2vw
+          margin-left: 3vw
+          margin-top: 4vh
           margin-bottom: 0
         .opacity_block_text
-          margin-left: 4vw
+          margin-left: 3vw
+          margin-top: 1vh
           font-family: 'Montserrat', sans-serif
           font-size: 0.9em
+          line-height: 1.5
           font-weight: 400
           width: 80%
           .bold_aboutus

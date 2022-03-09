@@ -2,10 +2,11 @@
   <div class="wrapper">
     <div class="header">Наши партнеры</div>
     <div class="items_wrapper">
-      <div class="partner_item">
-        <img src="../assets/microsoft.png">
-        <h2>Mircrosoft</h2>
-      </div>
+      <PartnerItem 
+      v-for="item in partner" 
+			:key="item.id" 
+			:ItemData = "item"/>
+      
       <div class="partner_item">
         <img src="../assets/smart_point.png">
         <h2>SmArt.Point</h2>
@@ -23,11 +24,25 @@
 </template>
 
 <script>
+import axios from 'axios'
+import PartnerItem from './PartnerItem.vue'
 export default {
-  name: "Partners"
+  name: "Partners",
+  data() {
+    return {
+      partner: []
+    };
+	},components:{
+    PartnerItem
+  },
+  mounted(){
+    axios
+      .get('http://localhost:8000/api/getpartners/')
+      .then(response => (this.partner = response.data));
+  }
 }
 </script>
-
+  
 <style lang="sass" scoped>
   .wrapper
     background: url("../assets/partners_block_bg.png")
@@ -41,7 +56,7 @@ export default {
     align-items: center
     .header
       margin-top: 12vh
-      width: 80vw
+      width: 76vw
       color: black
       font-weight: 400
       font-size: 4em

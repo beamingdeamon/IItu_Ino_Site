@@ -85,6 +85,7 @@ export default {
       .title
         width: 68%
         height: 27%
+        margin-left: 7.5vw
         .main_title
           font-weight: 700
           font-size: 4em
@@ -94,6 +95,7 @@ export default {
           font-size: 3.3em
           letter-spacing: 3.5px
       .text
+        margin-left: 7.5vw
         margin-top: 6vh
         font-size: 1.2em
         font-weight: regular
@@ -101,16 +103,17 @@ export default {
         .bold
           font-weight: 600
       .register
+        margin-right: 7.5vw
         margin-top: 4.5vh
         text-decoration: none
         font-size: 1.2em
         border: 1px solid grey
-        border-radius: 30px
+        border-radius: 40px
         width: 35%
         text-align: center
-        height: 4.5%
+        height: 6%
         color: grey
-        line-height: 1.8
+        line-height: 2.5
   @media screen and ( max-width: 1024px )
       .right_handler
         display: none

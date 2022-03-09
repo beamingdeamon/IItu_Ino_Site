@@ -54,10 +54,10 @@ export default {
     font-family: 'Montserrat', sans-serif
     color: white
     .header
-      width: 80%
+      width: 87%
       height: 18vh
       h1
-        margin-top: 5vh
+        margin-top: 10vh
         font-weight: 400
         font-size: 3.2em
         margin-bottom: 3vh
@@ -71,12 +71,12 @@ export default {
       height: 82vh
       .bot_items_wrapper
         margin-top: 10vh
-        margin-left: 10vw
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         .bot_item
           width: 20vw
           height: 30vh
+          margin-left: 6vw
           .number
             font-style: italic
             margin-left: 2vw
@@ -92,6 +92,8 @@ export default {
             backdrop-filter: blur(10px)
             border-radius: 20px
             margin-top: -4vh
+            padding-left: 1vw
+            padding-right: 1vw
             height: 34%
             display: flex
             align-items: center
