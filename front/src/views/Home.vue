@@ -15,7 +15,7 @@ import AboutUs from "@/components/AboutUs.vue"
 import ThirdBlock from "@/components/ThirdBlock.vue"
 import FourthBlock from "@/components/FourthBlock.vue"
 import HaveIdea from "@/components/HaveIdea.vue"
-import Partners from "@/components/Partners.vue"
+import Partners from "@/views/Partners.vue"
 
 export default {
   name: 'Home',

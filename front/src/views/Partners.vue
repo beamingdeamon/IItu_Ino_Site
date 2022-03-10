@@ -2,30 +2,18 @@
   <div class="wrapper">
     <div class="header">Наши партнеры</div>
     <div class="items_wrapper">
-      <PartnerItem 
+      <PartnerItem class="partner_item"
       v-for="item in partner" 
 			:key="item.id" 
 			:ItemData = "item"/>
       
-      <div class="partner_item">
-        <img src="../assets/smart_point.png">
-        <h2>SmArt.Point</h2>
-      </div>
-      <div class="partner_item">
-        <img src="../assets/chevron.png">
-        <h2>Chevron</h2>
-      </div>
-      <div class="partner_item">
-        <img src="../assets/kolesa.png">
-        <h2>Kolesa Group</h2>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import PartnerItem from './PartnerItem.vue'
+import PartnerItem from '../components/PartnerItem.vue'
 export default {
   name: "Partners",
   data() {
@@ -36,10 +24,9 @@ export default {
     PartnerItem
   },
   mounted(){
-    axios
-      .get('http://localhost:8000/api/getpartners/')
+    axios.get('http://localhost:8000/api/getpartners/')
       .then(response => (this.partner = response.data));
-  }
+  },
 }
 </script>
   

@@ -12,6 +12,7 @@ from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser 
 from rest_framework import status
 
+
 @permission_classes((permissions.AllowAny,))
 class createPartner(APIView):
     def post(self, request):
@@ -25,6 +26,7 @@ class getPartners(generics.ListAPIView):
         queryset = Partner.objects.all()
         serializer_class = serializers.PartnerSerializer
 
+@permission_classes((permissions.AllowAny,))
 class deletePartner(APIView):
         def delete(self, request, pk):
                 partner = Partner.objects.get(pk=pk)

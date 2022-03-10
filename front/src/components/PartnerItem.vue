@@ -1,6 +1,5 @@
 <template>
   <div class="partner_item">
-    {{ItemData.imgSource}}
     <img v-bind:src="'../assets/'+ItemData.imgSource+'.png'">
     <h2>{{ItemData.text}}</h2>
   </div>
@@ -11,7 +10,7 @@ export default {
   name: "PartnerItem",
    data: () => ({
     }),
-  proprs:{
+  props:{
     ItemData:{
       type: Object,
       default: () => {}
