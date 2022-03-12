@@ -179,5 +179,85 @@ export default {
             line-height: 4.2vh
             font-weight: 400
             font-size: 1.1em
-            width: 80%
+            width: 80% 
+  @media screen and ( max-width: 1024px )
+    .wrapper
+      background: url('../assets/have_idea_block_mobile_bg.png') !important
+      height: 260vh !important
+      .circle
+        display: none !important
+      .header
+        width: 100vw
+        height: 25vh
+        h1
+          padding-top: 8vh !important
+          margin-left: 7vw
+          font-weight: 400
+          font-size: 3em !important
+          margin-top: 0
+          width: 100% !important
+          letter-spacing: 4px
+        h2
+          width: 80% !important
+          font-size: 1.1em !important
+          line-height: 1.7 !important
+        .cube
+          display: none !important
+      .bottom_wrapper
+        height: 230vh !important
+        .left_block
+          height: 60vh !important
+          width: 90% !important
+          flex-direction: column !important
+          .number
+            margin-top: 10vh !important
+            margin-left: 8% !important
+            font-size: 16em !important
+            width: 45% !important
+            z-index: 0 !important
+          .opacity
+            margin-top: -8vh !important
+            width: 100% !important
+            height: auto !important
+            z-index: 100 !important
+            h1
+              margin-top: 3vh !important
+              font-size: 1.5em !important
+              margin-left: 5vw !important
+            h2
+              margin-top: 2vh !important
+              margin-left: 5vw !important
+              line-height: 1.5 !important
+              font-size: 1.1em !important
+              width: 90% !important
+        .right_block
+          height: auto !important
+          width: 90% !important
+          flex-direction: column !important
+          .number
+            margin-top: 10vh !important
+            margin-left: 8% !important
+            font-size: 16em !important
+            width: 45% !important
+            order: 1 !important
+            z-index: 0 !important
+          .opacity
+            order: 2 !important
+            z-index: 100 !important
+            margin-top: -8vh !important
+            width: 100% !important
+            height: 70% !important
+            background: rgba(255, 255, 255, 0.1)
+            backdrop-filter: blur(10px)
+            border-radius: 20px
+            h1
+              margin-top: 3vh !important
+              font-size: 1.5em !important
+              margin-left: 5vw !important
+            h2
+              margin-top: 2vh !important
+              margin-left: 5vw !important
+              line-height: 1.5 !important
+              font-size: 1.1em !important
+              width: 90% !important
 </style>

@@ -101,5 +101,41 @@ export default {
               margin-left: 1vw
               font-size: 1.2em
               font-weight: 400 
-          
+  @media screen and ( max-width: 1024px )
+    .wrapper
+      background: url('../assets/fourth_block_mobile_bg.png') !important
+      height: 250vh !important
+      .header
+        h1
+          margin-top: 9vh !important
+        h2
+          line-height: 2 !important
+          font-size: 1.2em !important
+      .bot_block
+        height: 232vh !important
+        .bot_items_wrapper
+          margin-top: 15vh !important
+          display: flex !important
+          flex-direction: column !important
+          align-items: center !important
+          .bot_item
+            margin-top: 4.5vh !important
+            width: 90% !important
+            height: 30vh !important
+            margin-left: 0 !important
+            .number
+              margin-left: 13vw !important
+              font-size: 15em !important
+              transform: rotate(-3.06deg)
+              background: radial-gradient( #FFFFFF 0%, #6D8DFF 100%)
+              -webkit-background-clip: text
+              -webkit-text-fill-color: transparent
+            .opacity
+              width: 90% !important
+              height: 29% !important
+              border-radius: 10px !important
+              margin-top: -6vh !important
+              padding-left: 6vw !important
+              h2
+                font-size: 1.6em !important
 </style>

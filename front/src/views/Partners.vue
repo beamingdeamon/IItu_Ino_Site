@@ -13,6 +13,7 @@
 
 <script>
 import axios from 'axios'
+import VueCarousel from 'vue-carousel'
 import PartnerItem from '../components/PartnerItem.vue'
 export default {
   name: "Partners",
@@ -21,6 +22,8 @@ export default {
       partner: []
     };
 	},components:{
+    'carousel': VueCarousel.Carousel,
+    'slide': VueCarousel.Slide,
     PartnerItem
   },
   mounted(){
@@ -68,4 +71,12 @@ export default {
           margin-top: 10%
           color: white
           font-weight: 400
+  @media screen and ( max-width: 1024px )
+    .wrapper
+      background: url('../assets/partner_block_mobile_bg.png') !important
+      height: 60vh !important
+      .header
+        margin-top: 8vh !important
+        width: 90% !important
+        font-size: 3.5em !important
 </style>

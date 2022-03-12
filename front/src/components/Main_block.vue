@@ -50,13 +50,13 @@ export default {
       width: 54vw
       height: 100vh
       .squares
-        width: 90%
+        width: 83%
         height: 80% 
         float: right
         background: url("../assets/squares.png")
         .radiant
-          width: 20%
-          height: 27%
+          width: 24%
+          height: 28%
           margin-top: 25vh
           margin-left: 12vw
           background: no-repeat url("../assets/radiant.png")
@@ -106,24 +106,59 @@ export default {
         margin-right: 7.5vw
         margin-top: 4.5vh
         text-decoration: none
+        font-weight: 700
         font-size: 1.2em
-        border: 1px solid grey
-        border-radius: 40px
+        background-color: white
+        border-radius: 10px
         width: 35%
         text-align: center
         height: 6%
-        color: grey
+        color: black
         line-height: 2.5
   @media screen and ( max-width: 1024px )
+    .wrapper
+      background: url('../assets/first_block_mobile_bg.png') !important
+      flex-direction: column !important
       .right_handler
-        display: none
+        height: 40%
+        width: 100% !important
+        order: 1
+        .squares
+          background: none !important
+          margin-left: 0 !important
+          float: left !important
+          .radiant
+            margin-top: 47% !important
+            background: none !important
+            margin-left: 0 !important
+            .opacity_block
+              padding-top: 2vh !important
+              padding-bottom: 2vh !important
+              padding-left: 5vh !important
+              font-family: 'Montserrat', sans-serif !important
+              margin-left: 0 !important
+              height: 12vh !important
+              line-height: 1.7 !important
+              font-size: 1.5em !important
+              font-weight: 200 !important
+              width: 70vw !important
+              backdrop-filter: blur(10px) !important
+              border-radius: 0px 30px 30px 0px !important
       .left_handler
+        order: 2
         width: 100% !important
         .title
-          width: 80% !important
+          width: 90% !important
+          .main_title
+            font-size: 3.4em !important
           .second_title 
-            width: 80% !important
+            width: 100% !important
+        .text
+          margin-left: -13vw !important
         .register
-          width: 50% !important
-          line-height: 2.3 !important
+          margin-top: 2vh !important
+          margin-right: 26vw !important
+          height: 8% !important
+          width: 55% !important
+          line-height: 6vh !important
 </style>

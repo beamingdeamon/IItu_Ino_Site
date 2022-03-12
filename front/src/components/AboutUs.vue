@@ -180,6 +180,87 @@ export default {
           position: absolute
           left: 84.5vw
           margin-top: -5vh
-          
-      
+  @media screen and ( max-width: 1024px )
+    .wrapper
+      height: 210vh !important
+      background: url('../assets/aboutus_block_mobile_bg.png')
+      position: relative !important
+      .top_wrapper
+        display: flex
+        flex-direction: column
+        height: 130vh
+        .left_handler
+          width: 90% !important
+          height: 65vh !important
+          order: 2
+          .h1
+            position: absolute !important
+            top: 4% !important
+            margin-top: 0 !important
+            font-weight: 400
+            font-size: 4em
+            left: 5% !important
+            width: 60%
+            padding:0
+            margin-bottom: 1vh
+          .h2
+            font-size: 1.3em !important
+            line-height: 1.5 !important
+            width: 90% !important
+            margin-left: 13vw !important
+          a
+            margin-top: 4vh !important
+            width: 52vw !important
+            height: 6vh !important
+            font-size: 1.2em
+            margin-right: 18vw !important
+            img
+              margin-right: 4.5vw !important
+        .right_handler
+          width: 100% !important
+          height: 71% !important
+          order: 1
+          .first_image
+            margin-top: 14vh !important
+            width: 61vw
+            height: 46vh
+            border-radius: 10px !important
+            margin-left: 12vw !important
+          .second_image
+            width: 37vw !important
+            height: 17vh !important
+            position: absolute
+            left: 50vw !important
+            top: 9% !important
+            margin-bottom: 3vh !important
+            margin-top: 0 !important
+            border-radius: 10px !important
+      .bottom_handler
+        height: 80vh !important
+        .about_card
+          width: 35vw !important
+          height: 20vh !important
+          left: 0 !important
+          margin-top: 60vh !important
+        .opacity_block
+          height: 85%
+          width: 80% !important
+          margin-top: 7vh !important
+          border-radius: 20px !important
+          backdrop-filter: blur(8px) !important
+          .opacity_block_title
+            margin-left: 5vw !important
+            margin-top: 3vh !important
+            font-size: 3em !important
+          .opacity_block_text
+            margin-left: 5vw !important
+            margin-top: 2vh !important
+            font-size: 1.15em !important
+            line-height: 1.7 !important
+            width: 85% !important
+          .cube
+            width: 16vw !important
+            height: 10vh !important
+            left: 82% !important
+         
 </style>

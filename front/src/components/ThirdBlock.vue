@@ -57,8 +57,8 @@ export default {
         border-radius: 10px
         color: white
         padding: 1vw
-        background: rgba(18, 17, 26, 0.6)
-        backdrop-filter: blur(10px)
+        background: rgba(18, 17, 26, 0.7)
+        backdrop-filter: blur(8px)
         h1
           margin-left: 1vw
           font-size: 1.3em
@@ -74,5 +74,37 @@ export default {
           letter-spacing: 1.8px
           .bold_text
             font-weight: 700
-
+  @media screen and ( max-width: 1024px )
+    .wrapper
+      background: url("../assets/third_block_mobile_bg.png") !important
+      height: 140vh !important
+      .header
+        margin-left: 10vw !important
+        margin-top: 9.5vh !important
+        font-size: 3.2em !important
+      .bot_handler
+        margin-top: 8vh !important
+        flex-direction: column !important
+        justify-content: center !important
+        align-items: center !important
+        .text_block
+          margin-bottom: 15% !important
+          width: 80% !important
+          height: 27vh !important
+          padding: 2.5% !important
+          h1
+            margin-left: 2vw !important
+            font-size: 1.55em !important
+          .white_line
+            margin-left: 2vw !important
+            width: 50%
+            border-radius: 1px
+            border: 1px solid #FFFF
+          h2
+            margin-left: 2vw !important
+            font-size: 1.08em
+            font-weight: 400
+            letter-spacing: 1.8px
+            .bold_text
+              font-weight: 700
 </style>
