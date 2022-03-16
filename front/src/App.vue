@@ -17,8 +17,8 @@ body
   padding: 0
   font-size: 2vh
   overflow-x: hidden
-  *
-    border: 1px solid red
+  // *
+  //   border: 1px solid red
   @media screen and ( max-width: 1024px )
     font-size: 1.6vh
 </style>

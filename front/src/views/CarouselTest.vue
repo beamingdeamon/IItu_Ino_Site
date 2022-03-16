@@ -1,7 +1,7 @@
 <template>
     <Carousel
         :ItemData = "partners"
-        :interval = "0"/>
+        :interval = "2500"/>
 </template>
 
 <script>

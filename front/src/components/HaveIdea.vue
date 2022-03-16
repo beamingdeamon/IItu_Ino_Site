@@ -218,7 +218,7 @@ export default {
           .opacity
             margin-top: -8vh !important
             width: 100% !important
-            height: auto !important
+            height: 50vh !important
             z-index: 100 !important
             h1
               margin-top: 3vh !important
