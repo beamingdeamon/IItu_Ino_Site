@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" id="main">
       <div class="animate__animated animate__bounceInLeft left_handler">
         <div class="title">
           <div class="main_title">IITU<br></div>

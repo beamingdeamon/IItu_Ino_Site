@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="about-us">
     <div class="about_line"></div>
     <div class="top_wrapper">
       <div class="left_handler ">

@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper">
-    <div class="header">
+  <div class="wrapper" id="have-idea">
+    <div class="have_idea_header">
     <div class="circle"></div>
       <h1>Есть идея?</h1>
       <h2>Поздравляем! У Вас есть идея, которая покорит мир или просто принесет вам прибыль. А мы поможем вам воплотить её в жизнь. <span class="bold">Возможно всё.</span></h2>
@@ -68,7 +68,7 @@ export default {
       margin-top: 85vh
       left: 48vw
       z-index: 0
-    .header
+    .have_idea_header
       width: 100vw
       height: 20vh
       h1
@@ -186,7 +186,7 @@ export default {
       height: 260vh !important
       .circle
         display: none !important
-      .header
+      .have_idea_header
         width: 100vw
         height: 25vh
         h1

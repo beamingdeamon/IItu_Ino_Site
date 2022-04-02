@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper">
-    <div class="header">Что мы предлогаем?</div>
+  <div class="wrapper" id="third">
+    <div class="third_header">Что мы предлогаем?</div>
     <div class="bot_handler">
       <div class="text_block">
         <h1>Программа акселерации</h1>
@@ -38,7 +38,7 @@ export default {
     font-family: 'Montserrat', sans-serif
     display: flex
     flex-direction: column
-    .header
+    .third_header
       margin-left: 6vw
       margin-top: 15vh
       float: left
@@ -78,7 +78,7 @@ export default {
     .wrapper
       background: url("../assets/third_block_mobile_bg.png") !important
       height: 140vh !important
-      .header
+      .third_header
         margin-left: 10vw !important
         margin-top: 9.5vh !important
         font-size: 3.2em !important

@@ -1,6 +1,6 @@
 <template>
-    <div class="wrapper">
-        <div class="header">Наши партнеры</div>
+    <div class="wrapper" id="partners">
+        <div class="carousel_header">Наши партнеры</div>
         <div class="carousel"
         v-if="!isMobile()"
         :style="{'margin-left':'-' + (100 * visibleSlide)+ '%', 'width': 25 * this.ItemData.length + 'vw'}">
@@ -100,7 +100,7 @@ export default {
         width: 100vw
         overflow: hidden
         z-index: 0
-        .header
+        .carousel_header
             margin-left: 5vw
             margin-top: 12vh
             width: 76vw
@@ -119,7 +119,7 @@ export default {
     .wrapper
       background: url('../assets/partner_block_mobile_bg.png') !important
       height: 60vh !important
-      .header
+      .carousel_header
         margin-top: 8vh !important
         width: 90% !important
         font-size: 3.5em !important

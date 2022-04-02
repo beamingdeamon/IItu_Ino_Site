@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper">
-    <div class="header">
+  <div class="wrapper" id="fourth">
+    <div class="fourth_header">
       <h1>Что внутри?</h1>
       <h2>У нас есть много классных вещей, которые <span class="bold_text">вы можете использовать абсолютно бесплатно</span></h2>
     </div>
@@ -53,7 +53,7 @@ export default {
     align-items: center
     font-family: 'Montserrat', sans-serif
     color: white
-    .header
+    .fourth_header
       width: 87%
       height: 18vh
       h1
@@ -105,7 +105,7 @@ export default {
     .wrapper
       background: url('../assets/fourth_block_mobile_bg.png') !important
       height: 250vh !important
-      .header
+      .fourth_header
         h1
           margin-top: 9vh !important
         h2
