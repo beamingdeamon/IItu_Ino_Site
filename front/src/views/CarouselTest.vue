@@ -17,7 +17,7 @@ export default {
         Carousel
     },
     mounted(){
-        axios.get('http://localhost:8000/api/getpartners/')
+        axios.get('https://ino.iitu.kz/api/getpartners/')
         .then( response => {this.partners = response.data} )
         .catch(function (error) {
         console.log(error);
