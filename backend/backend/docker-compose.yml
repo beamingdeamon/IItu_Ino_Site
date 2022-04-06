@@ -13,6 +13,7 @@ services:
       - app_network
     hostname: db
   web:
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile-web
@@ -25,6 +26,7 @@ services:
     depends_on:
       - db
   telegram:
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile-tg
