@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123321
+    ports:
+      - "5433:5432"
+    networks:
+      - app_network
+    hostname: db
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile-web
+    command: sh -c 'python manage.py migrate && python manage.py runserver 0.0.0.0:8000'
+    networks:
+      - app_network
+    hostname: web
+    ports:
+      - '8000:8000'
+    depends_on:
+      - db
+  telegram:
+    build:
+      context: .
+      dockerfile: Dockerfile-tg
+    command: python bot.py
+    networks:
+      - app_network
+    depends_on:
+      - web
+
+networks:
+  app_network:
+    name: app_network
