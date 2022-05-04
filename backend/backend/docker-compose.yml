@@ -4,7 +4,6 @@ services:
         restart: always
         volumes:
             - ./data/db:/var/lib/postgresql/data
-            - /var/www/ino_web_site/static/company_logos:/company_logos
         environment:
             - POSTGRES_DB=postgres
             - POSTGRES_USER=postgres
@@ -32,6 +31,8 @@ services:
         build:
             context: .
             dockerfile: Dockerfile-tg
+        volumes:
+            - /var/www/ino_web_site/static/company_logos:/project/company_logos
         command: python bot.py
         networks:
             - app_network
