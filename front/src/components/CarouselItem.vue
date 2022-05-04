@@ -1,7 +1,7 @@
 <template>
 <div class="item_wrapper">
     <div class="partner_item">
-        <img v-bind:src="'../assets/'+ItemData.imgSource+'.png'">
+        <img v-bind:src="'/company_logos/'+ItemData.imgSource+'.png'">
         <h2>{{ItemData.text}}</h2>
   </div>
 </div>

@@ -4,6 +4,7 @@ services:
         restart: always
         volumes:
             - ./data/db:/var/lib/postgresql/data
+            - /var/www/ino_web_site/static/company_logos:/company_logos
         environment:
             - POSTGRES_DB=postgres
             - POSTGRES_USER=postgres
