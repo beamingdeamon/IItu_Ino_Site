@@ -86,7 +86,7 @@ def on_photo(message, partner_name):
     file_id = message.photo[-1].file_id
     file_info = bot.get_file(file_id)
     file = requests.get('https://api.telegram.org/file/bot{0}/{1}'.format(API_TOKEN, file_info.file_path))
-    with open('/company_logos' + img_source + '.png', 'wb') as f:
+    with open('./company_logos/' + img_source + '.png', 'wb') as f:
         f.write(file.content)
     response = requests.post(f'{backend_url}/api/createpartner/',
                              json={"imgSource": img_source, "text": partner_name})
