@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" id="third">
-    <div class="third_header">Что мы предлогаем?</div>
+    <div class="third_header">Что мы предлагаем?</div>
     <div class="bot_handler">
       <div class="text_block">
         <h1>Программа акселерации</h1>
