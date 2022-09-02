@@ -19,7 +19,7 @@
           <img src="../assets/mail.png" alt="">
           <div class="item_wrapper">
             <div class="footer_header">Почта</div>
-            <div class="footer_describe">iitu.innovation@gmail.com</div>
+            <div class="footer_describe">itinocenter@gmail.com</div>
           </div>
         </div>
       </div>
