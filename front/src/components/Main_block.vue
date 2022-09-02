@@ -9,7 +9,7 @@
         <div class="text">
           Функциональное <span class="bold">инновационное</span> пространство <span class="bold">с обустроенными рабочими местами, переговорным комнатам и игровой зоной.</span>
         </div>
-        <a href="https://docs.google.com/forms/d/1LtJAvp_5nJUkYDsbvNpeQrVvk322_ioy1oQrW8rRwr0/viewform?edit_requested=true" class="register">Оставить заявку</a>
+        <a href="https://forms.gle/UyRUsqQyCFc252ea6" class="register">Оставить заявку</a>
       </div>
       <div class="animate__animated animate__bounceInRight right_handler">
         <div class="squares">
