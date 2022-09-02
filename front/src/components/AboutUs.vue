@@ -5,7 +5,7 @@
       <div class="left_handler ">
         <h1 class="h1">О нас</h1>
         <h2 class="h2"><span class="bold_aboutus">Наш центр</span> представляет собой творческое пространство, <span class="bold_aboutus">где будущие предприниматели могут работать над своими проектами</span>, обмениваться опытом, получать наставничество опытных бизнесменов и привлекать инвестирование на капитализацию своих бизнес-идей.</h2>
-        <a href="https://www.instagram.com/itinocenter/?hl=ru"><img src="../assets/instagram.svg" alt="instagram">Подписаться</a>
+        <a href="https://www.instagram.com/itinocenter/?hl=ru" target="_blank"><img src="../assets/instagram.svg" alt="instagram">Подписаться</a>
       </div>
       <div class="right_handler ">
         <div class="first_image">
